@@ -3,11 +3,14 @@
     "version": "1.0",
     "slug": "flask_app",
     "description": "Executa um servidor Flask como Add-on",
-    "arch": ["armhf", "armv7", "aarch64", "amd64"],
+    "arch": ["aarch64", "armhf", "armv7", "amd64"],
     "startup": "application",
     "boot": "auto",
+    "image": "ghcr.io/home-assistant/{arch}-base",
+    "url": "https://github.com/ACsBlack/Flask_app_ha",
     "ports": {
-	"5000/tcp": 5000
-	},
+      "5000/tcp": 5000
+    },
     "schema": {}
-}
+  }
+  
